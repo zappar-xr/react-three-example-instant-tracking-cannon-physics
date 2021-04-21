@@ -8,7 +8,7 @@ import {
 } from 'use-cannon';
 import { ZapparCamera, InstantTracker, ZapparCanvas } from '@zappar/zappar-react-three-fiber';
 
-import { HTML } from 'drei';
+import { Html } from '@react-three/drei';
 import { Vector3 } from 'three';
 
 const niceColors = require('nice-color-palettes');
@@ -94,7 +94,7 @@ function App() {
     const [placementMode, setPlacementMode] = useState(true);
     return (
       <>
-      <Suspense fallback={<HTML>Loading...</HTML>}>
+      <Suspense fallback={<Html>Loading...</Html>}>
         <ZapparCanvas shadowMap>
 
           <ZapparCamera />
